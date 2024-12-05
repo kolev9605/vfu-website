@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Link } from "lucide-react";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,20 +38,20 @@ export default function RootLayout({
                 <Link href="/" className="text-gray-700 hover:text-blue-600 px-3 py-2">
                   Home
                 </Link>
-                <Link href="features/" className="text-gray-700 hover:text-blue-600 px-3 py-2">
+                <Link href="/features/" className="text-gray-700 hover:text-blue-600 px-3 py-2">
                   Features
                 </Link>
-                <Link href="pricing/" className="text-gray-700 hover:text-blue-600 px-3 py-2">
+                <Link href="/pricing/" className="text-gray-700 hover:text-blue-600 px-3 py-2">
                   Pricing
                 </Link>
-                <Link href="contact/" className="text-blue-600 font-semibold px-3 py-2">
+                <Link href="/contact/" className="text-blue-600 font-semibold px-3 py-2">
                   Contact
                 </Link>
               </div>
               <div>
-                <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+                <Link href="/documentation" className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
                   Get Started
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function RootLayout({
               <ul className="space-y-2">
                 <li>
                   <a href="#" className="text-gray-400 hover:text-white">
-                    Documentation
+                    <Link href="/documentation">Documentation</Link>
                   </a>
                 </li>
                 <li>
