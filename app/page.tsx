@@ -23,7 +23,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="hidden md:block">
-            {/* <img src="/api/placeholder/600/400" alt="Product Preview" className="rounded-xl shadow-2xl" /> */}
+            <img src="/quick-deploy.png" alt="Product Preview" className="rounded-xl shadow-2xl" />
           </div>
         </div>
       </header>
